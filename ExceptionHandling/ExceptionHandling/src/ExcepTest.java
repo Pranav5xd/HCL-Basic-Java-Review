@@ -14,10 +14,10 @@ public class ExcepTest {
 	}
 	
 	static void marks() throws IllegalAccessException
-    {
-        System.out.println("Invalid marks");
-        throw new IllegalAccessException("demo");
-    }
+    	{
+        	System.out.println("Invalid marks");
+        	throw new IllegalAccessException("demo");
+    	}
 	
 	@SuppressWarnings("finally")
 	public static void main(String args[]) {
