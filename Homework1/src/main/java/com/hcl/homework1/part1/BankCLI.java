@@ -1,9 +1,8 @@
-package com.hcl.homework1;
+package com.hcl.homework1.part1;
 
 import java.util.Scanner;
 
 public class BankCLI {
-	@SuppressWarnings("resource")
 	public static void main(String args[]) {
 		Bank bank = new Bank();
 		Scanner scan = new Scanner(System.in);
@@ -25,5 +24,6 @@ public class BankCLI {
 			System.out.println("Enter y to continue, Enter n to quit");
 			flag = scan.nextLine();
 		}
+		scan.close();
 	}
 }

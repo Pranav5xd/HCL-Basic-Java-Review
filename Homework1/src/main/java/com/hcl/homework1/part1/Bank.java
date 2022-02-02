@@ -1,4 +1,4 @@
-package com.hcl.homework1;
+package com.hcl.homework1.part1;
 
 public class Bank {
 	int balance;

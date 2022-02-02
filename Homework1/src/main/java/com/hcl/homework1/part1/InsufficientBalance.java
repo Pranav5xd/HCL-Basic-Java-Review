@@ -1,4 +1,4 @@
-package com.hcl.homework1;
+package com.hcl.homework1.part1;
 
 @SuppressWarnings("serial")
 public class InsufficientBalance extends Exception{
