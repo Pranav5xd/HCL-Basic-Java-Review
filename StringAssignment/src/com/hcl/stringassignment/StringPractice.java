@@ -1,4 +1,4 @@
-package com.hcl.stingAssignment;
+package com.hcl.stringassignment;
 
 import java.util.Scanner;
 import java.util.StringTokenizer;
