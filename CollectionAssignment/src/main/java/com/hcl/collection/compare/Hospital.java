@@ -54,6 +54,7 @@ public class Hospital {
 		printPat(patList);
 		System.out.println("Sorted by ID");
 		Collections.sort(patList, new IDCompare());
+		printPat(patList);
 		System.out.println("Sorted by Name");
 		Collections.sort(patList, new NameCompare());
 		printPat(patList);
