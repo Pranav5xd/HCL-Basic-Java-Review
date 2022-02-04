@@ -2,14 +2,11 @@ package com.hcl.collection.compare;
 
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Comparator;
 
-import com.hcl.collection.compare.Person.AgeCompare;
-import com.hcl.collection.compare.Person.Doctor;
+import com.hcl.collection.compare.Doctor.SpecialtyCompare;
+import com.hcl.collection.compare.Patient.AgeCompare;
 import com.hcl.collection.compare.Person.IDCompare;
 import com.hcl.collection.compare.Person.NameCompare;
-import com.hcl.collection.compare.Person.Patient;
-import com.hcl.collection.compare.Person.SpecialtyCompare;
 
 public class Hospital {
 
