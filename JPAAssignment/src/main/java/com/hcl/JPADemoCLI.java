@@ -13,9 +13,10 @@ public class JPADemoCLI {
 		while (flag) {
 			System.out.println("Student DataBase App");
 			System.out.println("1 - Insert Student Entity");
-			System.out.println("2 - Retrieve a Student Entity");
-			System.out.println("3 - Update a Student Entity");
-			System.out.println("4 - Delete  a Student Entity");
+			System.out.println("2 - Retrieve all Entities");
+			System.out.println("3 - Retrieve a Student Entity");
+			System.out.println("4 - Update a Student Entity");
+			System.out.println("5 - Delete  a Student Entity");
 			System.out.println("Any Other Key - Exit");
 			System.out.println("Enter Command:");
 			System.out.println("Table Columns: ID FirstName LastName Email.");
@@ -38,13 +39,17 @@ public class JPADemoCLI {
 				break;
 			}
 			case "2": {
+				op.findAll();
+				break;
+			}
+			case "3": {
 				System.out.println("Student ID to retrieve ");
 				int id = scan.nextInt();
 				scan.nextLine();
 				op.find(id);
 				break;
 			}
-			case "3": {
+			case "4": {
 				System.out.println("Student ID to update ");
 				int id = scan.nextInt();
 				scan.nextLine();
@@ -60,7 +65,7 @@ public class JPADemoCLI {
 				break;
 
 			}
-			case "4": {
+			case "5": {
 				System.out.println("Student ID to delete");
 				int id = scan.nextInt();
 				scan.nextLine();
