@@ -6,7 +6,6 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 
 import com.hcl.User;
 import com.hcl.db.DBHandler;
@@ -29,7 +28,7 @@ public class LoginServlet extends HttpServlet {
 				res.sendRedirect("successfulLogin.jsp");
 			}
 			else {
-				HttpSession session = req.getSession();
+				 req.getSession();
 			}
 		}
 		catch(ClassNotFoundException e){

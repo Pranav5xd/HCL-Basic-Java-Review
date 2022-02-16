@@ -33,6 +33,7 @@ public class DBHandler {
 			return e.toString();
 		}
 	}
+	
 
 	public void insertRecord(Employee emp) {
 		try {
@@ -44,9 +45,9 @@ public class DBHandler {
 			preparedStatement.setDouble(3, emp.getSalary());
 			preparedStatement.setInt(4, emp.getAge());
 			preparedStatement.executeUpdate();
-			System.out.println("Record inserted");
+			System.out.print("Record inserted");
 		} catch (SQLException e) {
-			System.out.println("Record insert failed");
+			System.out.print("Record insert failed");
 		}
 	}
 
@@ -55,7 +56,7 @@ public class DBHandler {
 			String update = "UPDATE Employee SET ";
 			PreparedStatement preparedStatement = connection.prepareStatement(update + colNVal + " WHERE " + condition);
 			preparedStatement.executeUpdate();
-			System.out.println("Record updated");
+			System.out.print("Record updated");
 		} catch (SQLException e) {
 			System.out.println("Record update failed");
 		}
@@ -66,9 +67,9 @@ public class DBHandler {
 			String delete = "DELETE FROM Employee WHERE ";
 			PreparedStatement preparedStatement = connection.prepareStatement(delete + condition);
 			preparedStatement.executeUpdate();
-			System.out.println("Record deleted");
+			System.out.print("Record deleted");
 		} catch (SQLException e) {
-			System.out.println("Record deleted failed");
+			System.out.print("Record deleted failed");
 		}
 	}
 
@@ -104,6 +105,8 @@ public class DBHandler {
 				String age = rs.getString("Age");
 				System.out.println(id + " " + name + " " + dob + "	" + salary + " " + age);
 			}
+			
+			System.out.print("Record shown");
 		} catch (SQLException e) {
 			System.out.println(e);
 		}
